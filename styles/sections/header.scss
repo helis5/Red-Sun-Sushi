@@ -1,0 +1,164 @@
+header{
+  width: 100%;
+  height: 53px;
+  section#icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    img{
+      width: 79px;
+    }
+    .empty{
+      width: 18px;
+      height: 15px;
+    }
+    button.burger-menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 18px;
+      height: 15px;
+      div{
+        width: inherit;
+        height: 2.85px;
+        background-color: black;
+        border-radius: 50px;
+      }
+    }
+    .search{
+      display: none;
+    }
+    .social-network{
+      display: none;
+    }
+    a.delivery{
+      display: none;
+    }
+    a.phone-number{
+      display: none;
+    }
+    .classes{
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+  header{
+    width: 100%;
+    height: 147px;
+    padding: 0 50px;
+    section#icon{
+      display: grid;
+      grid-template: 70px 62px /2fr 5fr 3fr 2fr 1fr;
+      width: 100%;
+      height: inherit;
+      img{
+        width: 104px;
+      }
+      .search{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 323px;
+        height: 28px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 7px 12px;
+        img{
+          width: 15px;
+          height: 15px;
+          margin-right: 12px;
+        }
+        input{
+          width: 100%;
+          height: 100%;
+          background-color: inherit;
+          font-family: "El Messiri";
+        }
+      }
+      .social-network{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 148px;
+        height: 35px;
+        a{
+          width: 30px;
+          height: 30px;
+          img{
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+      a.delivery{
+        display: block;
+        color: black;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        grid-column: 4/5;
+      }
+      a.phone-number{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        width: 156px;
+        height: 25px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        img{
+          width: 25px;
+        }
+      }
+      .classes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        grid-column: 1/6;
+        a{
+          color: black;
+        }
+        a:hover{
+          text-decoration: underline
+        }
+      }
+      .empty{
+        display: none;
+      }
+      button.burger-menu{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+}

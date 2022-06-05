@@ -1,0 +1,76 @@
+section#we-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 824px;
+  margin-top: 15px;
+}
+section#we-offer .container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section#we-offer .container h1 {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+}
+section#we-offer .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section#we-offer .container .card img {
+  width: inherit;
+  border-radius: 0 0 10px 10px;
+  object-fit: cover;
+}
+section#we-offer .container .card .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+  width: inherit;
+  height: 38px;
+}
+section#we-offer .container .card .text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+section#we-offer .container .sushimaki {
+  height: 157px;
+}
+section#we-offer .container .sushimaki img {
+  height: 119px;
+}
+section#we-offer .container .sushiset {
+  height: 203px;
+}
+section#we-offer .container .sushiset img {
+  height: 165px;
+}
+section#we-offer .container .nigiri {
+  height: 396px;
+}
+section#we-offer .container .nigiri img {
+  height: 357px;
+}
+
+/*# sourceMappingURL=main-we-offer.css.map */

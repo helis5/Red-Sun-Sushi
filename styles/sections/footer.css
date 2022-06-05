@@ -1,0 +1,31 @@
+footer .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 135px;
+  background-color: black;
+  border-radius: 10px;
+}
+footer .container .card .div {
+  width: inherit;
+  height: 105px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 11px 30px;
+}
+footer .container .card .div p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .container .card .stars {
+  margin-bottom: 6px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,58 @@
+section#main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+section#main-banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+section#main-banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 166px;
+  height: 72px;
+  z-index: 1;
+}
+section#main-banner .container h1 {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+section#main-banner .container p {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+}
+section#main-banner .container button {
+  width: 104px;
+  height: 27px;
+  background: #E11514;
+  border-radius: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+
+/*# sourceMappingURL=main-banner.css.map */

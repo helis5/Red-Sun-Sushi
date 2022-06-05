@@ -1,0 +1,537 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=El+Messiri&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header {
+  width: 100%;
+  height: 53px;
+}
+header section#icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+}
+header section#icon img {
+  width: 79px;
+}
+header section#icon .empty {
+  width: 18px;
+  height: 15px;
+}
+header section#icon button.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 18px;
+  height: 15px;
+}
+header section#icon button.burger-menu div {
+  width: inherit;
+  height: 2.85px;
+  background-color: black;
+  border-radius: 50px;
+}
+header section#icon .search {
+  display: none;
+}
+header section#icon .social-network {
+  display: none;
+}
+header section#icon a.delivery {
+  display: none;
+}
+header section#icon a.phone-number {
+  display: none;
+}
+header section#icon .classes {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    height: 147px;
+    padding: 0 50px;
+  }
+  header section#icon {
+    display: grid;
+    grid-template: 70px 62px/2fr 5fr 3fr 2fr 1fr;
+    width: 100%;
+    height: inherit;
+  }
+  header section#icon img {
+    width: 104px;
+  }
+  header section#icon .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 323px;
+    height: 28px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 7px 12px;
+  }
+  header section#icon .search img {
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+  }
+  header section#icon .search input {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    font-family: "El Messiri";
+  }
+  header section#icon .social-network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 148px;
+    height: 35px;
+  }
+  header section#icon .social-network a {
+    width: 30px;
+    height: 30px;
+  }
+  header section#icon .social-network a img {
+    width: inherit;
+    height: inherit;
+  }
+  header section#icon a.delivery {
+    display: block;
+    color: black;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    grid-column: 4/5;
+  }
+  header section#icon a.phone-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 156px;
+    height: 25px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  header section#icon a.phone-number img {
+    width: 25px;
+  }
+  header section#icon .classes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    grid-column: 1/6;
+  }
+  header section#icon .classes a {
+    color: black;
+  }
+  header section#icon .classes a:hover {
+    text-decoration: underline;
+  }
+  header section#icon .empty {
+    display: none;
+  }
+  header section#icon button.burger-menu {
+    display: none;
+  }
+}
+section#main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+section#main-banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+section#main-banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 166px;
+  height: 72px;
+  z-index: 1;
+}
+section#main-banner .container h1 {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+section#main-banner .container p {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+}
+section#main-banner .container button {
+  width: 104px;
+  height: 27px;
+  background: #E11514;
+  border-radius: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+
+section#main-popular-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 190px;
+  margin-top: 15px;
+  color: black;
+  font-family: "El Messiri";
+}
+section#main-popular-categories .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 137px;
+  gap: 10px;
+}
+section#main-popular-categories .cards .card {
+  display: flex;
+  width: 100%;
+  max-width: 107px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 137px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 0 0 6px 0;
+}
+section#main-popular-categories .cards .card img {
+  border-radius: 10px;
+  width: inherit;
+}
+
+section#we-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 824px;
+  margin-top: 15px;
+}
+section#we-offer .container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section#we-offer .container h1 {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+}
+section#we-offer .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section#we-offer .container .card img {
+  width: inherit;
+  border-radius: 0 0 10px 10px;
+  object-fit: cover;
+}
+section#we-offer .container .card .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+  width: inherit;
+  height: 38px;
+}
+section#we-offer .container .card .text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+section#we-offer .container .sushimaki {
+  height: 157px;
+}
+section#we-offer .container .sushimaki img {
+  height: 119px;
+}
+section#we-offer .container .sushiset {
+  height: 203px;
+}
+section#we-offer .container .sushiset img {
+  height: 165px;
+}
+section#we-offer .container .nigiri {
+  height: 396px;
+}
+section#we-offer .container .nigiri img {
+  height: 357px;
+}
+
+section#reviews .container .points, section#main-popular-categories .points {
+  display: flex;
+  justify-content: space-between;
+  width: 43px;
+  height: 11px;
+}
+section#reviews .container .points .point, section#main-popular-categories .points .point {
+  width: 11px;
+  height: 11px;
+  border-radius: 50px;
+  border: 1.2px solid black;
+  cursor: pointer;
+}
+section#reviews .container .points .passive, section#main-popular-categories .points .passive {
+  background-color: black;
+}
+
+section#reviews {
+  width: 100%;
+  height: 240px;
+  margin-top: 14px;
+}
+section#reviews .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+}
+section#reviews .container h1 {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+}
+section#reviews .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 135px;
+  background-color: black;
+  border-radius: 10px;
+}
+section#reviews .container .card .review {
+  width: inherit;
+  height: 105px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 11px 30px;
+}
+section#reviews .container .card .review p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+section#reviews .container .card .stars {
+  margin-bottom: 6px;
+}
+section#reviews .container p {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+}
+
+footer {
+  width: 100%;
+}
+footer .container {
+  width: inherit;
+}
+footer .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 473px;
+  background-color: black;
+  border-radius: 10px;
+}
+footer .container .card div {
+  width: inherit;
+  height: 439px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 11px 30px;
+}
+footer .container .card div p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .container .card .stars {
+  margin-bottom: 6px;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+
+Ы * {
+  box-size: border-box;
+}
+
+body {
+  z-index: 1000;
+  padding: 0 18px;
+  color: white;
+}
+
+html {
+  position: fixed;
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */

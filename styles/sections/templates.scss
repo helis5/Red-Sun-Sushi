@@ -1,0 +1,20 @@
+//шаблоны
+
+%points {
+  .points{
+    display: flex;
+    justify-content: space-between;
+    width: 43px;
+    height: 11px;
+    .point{
+      width: 11px;
+      height: 11px;
+      border-radius: 50px;
+      border: 1.2px solid black;
+      cursor: pointer;
+    }
+    .passive{
+      background-color: black;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+footer{
+  width: 100%;
+  .container{
+    width: inherit;
+    .card{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: inherit;
+      height: 473px;
+      background-color: black;
+      border-radius: 10px;
+      div{
+        width: inherit;
+        height: 439px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        padding: 11px 30px;
+        p{
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .stars{
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
