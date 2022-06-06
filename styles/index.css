@@ -1125,45 +1125,23 @@ aside#mobile-menu section#we a.phone-number img {
   }
   aside#mobile-menu section#we {
     width: 170px;
-    height: 100px;
+    height: 120px;
     margin-bottom: 150px;
   }
   aside#mobile-menu section#we .social-network {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 145px;
     height: 30px;
   }
   aside#mobile-menu section#we .social-network a {
     width: 30px;
-    height: inherit;
-  }
-  aside#mobile-menu section#we .social-network a img {
-    width: inherit;
-    height: inherit;
   }
   aside#mobile-menu section#we a.delivery {
-    display: block;
-    color: black;
-    font-family: "Roboto";
-    font-weight: 400;
     font-size: 17px;
-    line-height: 16px;
   }
   aside#mobile-menu section#we a.phone-number {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
     width: 170px;
     height: 25px;
-    font-family: "Roboto";
-    font-weight: 400;
     font-size: 17px;
-    line-height: 16px;
   }
   aside#mobile-menu section#we a.phone-number img {
     width: 25px;
