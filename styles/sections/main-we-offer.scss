@@ -6,6 +6,14 @@ section#we-offer{
   width: 100%;
   height: 824px;
   margin-top: 15px;
+  h1{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: black;
+  }
 
   .container{
     width: inherit;
@@ -14,14 +22,7 @@ section#we-offer{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    h1{
-      font-family: 'El Messiri';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
-      color: black;
-    }
+
 
     .card{
       display: flex;
@@ -32,14 +33,11 @@ section#we-offer{
       background-color: black;
       border-radius: 10px;
       overflow: hidden;
-      //z-index: -1000000;
       img{
-        //width: 339px;
         width: 100%;
         height: 100%;
         border-radius: 0 0 10px 10px;
         object-fit: cover;
-        //z-index: -1000000;
       }
       .text{
         display: flex;
@@ -80,15 +78,10 @@ section#we-offer{
   }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
   section#we-offer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 919px;
-    margin-top: 15px;
+    height: 930px;
+    margin-top: 65px;
     h1{
       font-family: 'El Messiri';
       font-weight: 400;
@@ -98,44 +91,28 @@ section#we-offer{
     }
     .container{
       width: inherit;
-      height: 100%;
+      max-height: 779px;
       display: grid;
       grid-template: 313px 406px / 1fr 1fr;
       gap: 60px;
       .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         width: 100%;
         height: 100%;
-        background-color: black;
-        border-radius: 10px;
-        overflow: hidden;
-        //z-index: -1000000;
         img{
-          //width: 339px;
           width: inherit;
           border-radius: 0 0 10px 10px;
           object-fit: cover;
-          //z-index: -1000000;
         }
         .text{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: black;
-          border-radius: 0 0 10px 10px;
-          width: inherit;
           height: 75px;
           min-height: 75px;
           position: static;
+
           p{
-            font-family: 'Roboto';
-            font-style: normal;
             font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 18px;
+            line-height: 21px;
+
           }
         }
       }
@@ -146,7 +123,6 @@ section#we-offer{
         grid-template: 1fr 75px / 1fr;
         min-height: 312px;
         img{
-          width: 100%;
           height: auto;
           min-height: 237px;
           max-height: 237px;
@@ -181,4 +157,8 @@ section#we-offer{
       }
     }
   }
+}
+
+@media screen and (min-width: 992px){
+
 }

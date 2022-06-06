@@ -11,7 +11,7 @@ footer{
       height: 473px;
       background-color: black;
       border-radius: 10px;
-      div{
+      .text{
         width: inherit;
         height: 439px;
         border: 2px solid black;
@@ -26,6 +26,13 @@ footer{
           font-size: 12px;
           line-height: 14px;
         }
+      }
+      .creator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: 34px;
       }
       .stars{
         margin-bottom: 6px;
