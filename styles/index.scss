@@ -58,7 +58,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 body{
-  z-index: 1000;
   padding: 0 18px;
   color: white;
 }
@@ -70,6 +69,18 @@ html {
   overflow-x: hidden;
   position: relative;
   display: block;
+}
+
+@media screen and (min-width: 992px){
+  body{
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  body{
+    padding: 0 95px;
+  }
 }
 
 
