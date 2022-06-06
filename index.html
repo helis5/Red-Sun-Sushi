@@ -6,11 +6,67 @@
     <link href="styles/index.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //Функция открытия меню
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');//Ищем меню
+            //Если мы нашли меню тогда выполняем код
+            if (mobileMenu) {
+                // тогда он удалится если его нет то добавится
+                //Если класс open УЖЕ есть в элементе headerMenu
+                mobileMenu.classList.toggle('open');
+            }
+        }
+    </script>
 </head>
 <body>
+<aside class="mobile-menu open" id="mobile-menu">
+    <section id="header">
+        <div class="icon">
+            <button onclick="toggleMenu()" class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <img src="images/logo.png" alt="логотип">
+            <div class="empty">
+            </div>
+        </div>
+        <div class="search">
+            <img src="images/search.svg" alt="search">
+            <input type="text">
+        </div>
+    </section>
+    <section class="menu">
+        <a href="#">- Суши -</a>
+        <hr>
+        <a href="#">- Сеты -</a>
+        <hr>
+        <a href="#">- Супы -</a>
+        <hr>
+        <a href="#">- Салаты -  </a>
+        <hr>
+        <a href="#">- Тайская еда -</a>
+        <hr>
+        <a href="#">- Десерты -</a>
+        <hr>
+        <a href="#">- Напитки -</a>
+        <hr>
+    </section>
+    <section id="we">
+        <a href="tel:+37355532805" class="phone-number"><img src="images/phone.svg" alt="phone">+373 (555) 32805</a>
+        <a href="#" class="delivery">Доставка 25 р.</a>
+        <div class="social-network">
+            <a href="#"><img src="images/header-social-network/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="images/header-social-network/viber.svg" alt="viber"></a>
+            <a href="#"><img src="images/header-social-network/whatsapp.svg" alt="whatsapp"></a>
+            <a href="#"><img src="images/header-social-network/facebook.svg" alt="facebook"></a>
+        </div>
+    </section>
+</aside>
 <header>
     <section id="icon">
-        <button class="burger-menu">
+        <button onclick="toggleMenu()" class="burger-menu">
             <div></div>
             <div></div>
             <div></div>
@@ -234,6 +290,6 @@
             <div class="creator">Powered by Anri</div>
         </div>
     </div>
-</footer>
+</footer>-->
 </body>
 </html>

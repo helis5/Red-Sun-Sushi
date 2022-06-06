@@ -1,0 +1,13 @@
+@charset "UTF-8";
+aside#mobile-menu {
+  display: flex;
+  z-index: 1000;
+  width: 100%;
+  min-height: 100px;
+  background-color: aquamarine;
+  transform: translateX(-100%);
+  /*Сдвиг влево на 100%*/
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=burger-menu.css.map */

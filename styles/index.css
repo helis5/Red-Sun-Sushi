@@ -945,6 +945,239 @@ footer .container .card .creator {
     line-height: 19px;
   }
 }
+aside.open {
+  display: flex !important;
+  transform: translateX(-4.2%) !important;
+  transition: 0.3s !important;
+  width: 100% !important;
+}
+
+aside#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+  transform: translateX(-110%);
+  /*Сдвиг влево на 100%*/
+  transition: 0.3s;
+  position: fixed;
+  padding: 0 19px 19px 19px;
+}
+aside#mobile-menu section#header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+aside#mobile-menu section#header .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 53px;
+}
+aside#mobile-menu section#header .icon img {
+  width: 79px;
+}
+aside#mobile-menu section#header .icon .empty {
+  width: 18px;
+  height: 15px;
+}
+aside#mobile-menu section#header .icon button.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 18px;
+  height: 15px;
+  background-color: white;
+}
+aside#mobile-menu section#header .icon button.burger-menu div {
+  width: inherit;
+  height: 2.85px;
+  background-color: black;
+  border-radius: 50px;
+}
+aside#mobile-menu section#header .search {
+  width: 100%;
+  height: 26px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4px 9px;
+}
+aside#mobile-menu section#header .search img {
+  width: 18px;
+  height: 18px;
+}
+aside#mobile-menu section.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 210px;
+  margin-bottom: 230px;
+}
+aside#mobile-menu section.menu a {
+  color: black;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+aside#mobile-menu section.menu hr {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+aside#mobile-menu section#we {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 131px;
+  height: 100px;
+  margin-bottom: 150px;
+}
+aside#mobile-menu section#we .social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 109px;
+  height: 24px;
+}
+aside#mobile-menu section#we .social-network a {
+  width: 24px;
+  height: inherit;
+}
+aside#mobile-menu section#we .social-network a img {
+  width: inherit;
+  height: inherit;
+}
+aside#mobile-menu section#we a.delivery {
+  display: block;
+  color: black;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+aside#mobile-menu section#we a.phone-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  width: 140px;
+  height: 25px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+aside#mobile-menu section#we a.phone-number img {
+  width: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  aside#mobile-menu {
+    padding: 25px 50px 30px 50px;
+  }
+  aside#mobile-menu section#header {
+    height: 100px;
+  }
+  aside#mobile-menu section#header .icon img {
+    width: auto;
+    height: 45px;
+  }
+  aside#mobile-menu section#header .empty {
+    width: 18px;
+    height: 15px;
+  }
+  aside#mobile-menu section#header button.burger-menu {
+    width: 24px !important;
+    height: 21px !important;
+  }
+  aside#mobile-menu section#header button.burger-menu div {
+    width: inherit !important;
+    height: 3px !important;
+  }
+  aside#mobile-menu section.menu {
+    height: 260px;
+    margin-bottom: 160px;
+  }
+  aside#mobile-menu section.menu a {
+    font-size: 17px;
+  }
+  aside#mobile-menu section#we {
+    width: 170px;
+    height: 100px;
+    margin-bottom: 150px;
+  }
+  aside#mobile-menu section#we .social-network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 145px;
+    height: 30px;
+  }
+  aside#mobile-menu section#we .social-network a {
+    width: 30px;
+    height: inherit;
+  }
+  aside#mobile-menu section#we .social-network a img {
+    width: inherit;
+    height: inherit;
+  }
+  aside#mobile-menu section#we a.delivery {
+    display: block;
+    color: black;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+  }
+  aside#mobile-menu section#we a.phone-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 170px;
+    height: 25px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+  }
+  aside#mobile-menu section#we a.phone-number img {
+    width: 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  aside#mobile-menu {
+    display: none !important;
+  }
+
+  aside#open {
+    display: none !important;
+  }
+}
 /*Обнуление*/
 * {
   padding: 0;
