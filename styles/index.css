@@ -266,6 +266,7 @@ section#main-banner .container button {
   section#main-banner {
     height: 300px;
     padding: 100px 0 40px 0;
+    border-radius: 15px;
   }
   section#main-banner .container h1 {
     font-style: normal;
@@ -409,9 +410,10 @@ section#main-popular-categories .points .passive {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    border-radius: 15px;
   }
   section#main-popular-categories .cards .card img {
-    border-radius: 10px;
+    border-radius: 15px;
     width: inherit;
     height: 270px;
     object-fit: cover;
@@ -528,10 +530,11 @@ section#we-offer .container .nigiri img {
   section#we-offer .container .card {
     width: 100%;
     height: 100%;
+    border-radius: 15px;
   }
   section#we-offer .container .card img {
     width: inherit;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
     object-fit: cover;
   }
   section#we-offer .container .card .text {
@@ -727,13 +730,13 @@ section#reviews p {
     max-width: 373px;
     height: inherit;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 15px;
   }
   section#reviews .container .card .review {
     width: inherit;
     height: 100%;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
     color: black;
     padding: 33px 33px;
@@ -779,6 +782,10 @@ footer .container .card {
   border-radius: 10px;
 }
 footer .container .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
   width: inherit;
   height: 439px;
   border: 2px solid black;
@@ -786,6 +793,76 @@ footer .container .card .text {
   background-color: white;
   color: black;
   padding: 11px 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .container .card .text .columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 384px;
+}
+footer .container .card .text .columns div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+footer .container .card .text .columns div a {
+  color: black;
+}
+footer .container .card .text .columns div a img {
+  width: 17px;
+  height: 14px;
+  margin-right: 10px;
+}
+footer .container .card .text .columns div a:hover {
+  text-decoration: underline;
+}
+footer .container .card .text .columns div h1 {
+  margin-bottom: 16px;
+}
+footer .container .card .text .columns .our-contacts {
+  height: 114px;
+}
+footer .container .card .text .columns .info {
+  height: 103px;
+}
+footer .container .card .text .columns .call-us {
+  height: 97px;
+}
+footer .container .card .text .columns .call-us a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: red;
+}
+footer .container .card .text .columns .call-us .social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 148px;
+  height: 35px;
+  margin-top: 16px;
+}
+footer .container .card .text .columns .call-us .social-network a {
+  width: 30px;
+  height: 30px;
+}
+footer .container .card .text .columns .call-us .social-network a img {
+  width: inherit;
+  height: inherit;
+}
+footer .container .card .text .rules {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 footer .container .card .text p {
   font-family: "Roboto";
@@ -800,11 +877,74 @@ footer .container .card .creator {
   align-items: center;
   width: inherit;
   height: 34px;
-}
-footer .container .card .stars {
-  margin-bottom: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    width: 100%;
+    margin-top: 70px;
+  }
+  footer .container {
+    width: inherit;
+  }
+  footer .container .card {
+    height: 473px;
+    border-radius: 15px;
+  }
+  footer .container .card .text {
+    height: 439px;
+    border-radius: 15px;
+    padding: 41px 55px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  footer .container .card .text .columns {
+    flex-direction: row;
+    width: 100%;
+    height: 215px;
+  }
+  footer .container .card .text .columns div a img {
+    width: 32px;
+    height: 26px;
+    margin-right: 15px;
+  }
+  footer .container .card .text .columns div h1 {
+    margin-bottom: 16px;
+  }
+  footer .container .card .text .columns .our-contacts {
+    height: inherit;
+  }
+  footer .container .card .text .columns .info {
+    height: inherit;
+  }
+  footer .container .card .text .columns .call-us {
+    height: 161px;
+  }
+  footer .container .card .text .columns .call-us a {
+    font-size: 24px;
+    line-height: 28px;
+    color: red;
+  }
+  footer .container .card .text .columns .call-us .social-network {
+    width: 213px;
+    height: 35px;
+    margin-top: 16px;
+  }
+  footer .container .card .text .columns .call-us .social-network a {
+    width: 43px;
+    height: 42px;
+  }
+  footer .container .card .creator {
+    height: 62px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 /*Обнуление*/
 * {
   padding: 0;
